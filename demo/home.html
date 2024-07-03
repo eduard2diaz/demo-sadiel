@@ -120,32 +120,41 @@
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">App Name</a>
+      <a class="navbar-brand" href="./home.html">App Name</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Buy</a>
+            <a class="nav-link" href="./filter.html">Buy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Rent</a>
+            <a class="nav-link" href="./filter.html">Rent</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sale</a>
+            <a class="nav-link" href="./filter.html">Sale</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Smart Agent</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="d-flex" style="margin-right: 9%;">
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>        </div>
       </div>
     </div>
   </nav>
@@ -166,7 +175,7 @@
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>
             <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">Contact a realtor</a></p>
           </div>
         </div>
       </div>
@@ -176,7 +185,7 @@
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">Work with us</a></p>
           </div>
         </div>
       </div>
@@ -268,62 +277,64 @@
         <img src="./assets/dist/img/500C.jpg"/>
       </div>
     </div>
-
-<div class="row mt-5">
-  <div class="col-md-3">
-    <h5>Us</h5>
-    <ul class="list-unstyled">
-      <li>
-        <a>About us</a>
-      </li>
-      <li>
-        <a>Features</a>
-      </li>
-      <li>
-        <a>FAQs</a>
-      </li>
-  </ul>
-  </div>
-  <div class="col-md-3">
-      <h5>Work with us</h5>
-
-      <ul class="list-unstyled">
-          <li>
-            <a>Contact us</a>
-          </li>
-          <li>
-            <a>Terms and conditions</a>
-          </li>
-          <li>
-            <a>Privacy policy</a>
-          </li>
-      </ul>
-  </div>
-  <div class="col-md-5">
-    <form method="POST" action="/subscriber/create"><input type="hidden" name="_csrf" value="FmRgohBRAkPQkaYWMEPexoHVbJk1Egqz9uYTAY4jkjqP4j0UdFdVxiIyYXH9qZZ0U27q87a0QaFQK2ieztQmOL8SpFm_gwhx">
-      <h5>Subscribe to our newsletter</h5>
-      <p>Monthly digest of what's new and exciting from us.</p>
-      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-          <label class="visually-hidden" for="newsletter1">Email address</label>
-          <input class="form-control" id="newsletter1" name="email" placeholder="Email address" type="email">
-          <button class="btn btn-primary text-uppercase fw-bold" type="submit"> Subscribe</button>
-      </div>
-  </form>
-  </div>
-</div>
-
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
   </div><!-- /.container -->
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p>&copy; 2024 Company, Inc.  
-    </footer>
 </main>
+
+<div class="b-example-divider mt-4"></div>
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Work with us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms ans conditions</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Realtor</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
